@@ -1,0 +1,8 @@
+# Requer Python 3.12: mediapipe 0.10.21 é a última versão com a API mp.solutions usada pelo motor
+mediapipe==0.10.21
+opencv-python<4.12
+numpy<2
+pyyaml>=6.0.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.8
+flask>=2.0.0

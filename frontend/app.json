@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Kynaro",
+    "slug": "kynaro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "kynaro",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#111418",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.emergent.kynaro.lvm01u",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Usamos a c\u00e2mera para acompanhar seus exerc\u00edcios e fotografar suas refei\u00e7\u00f5es.",
+        "NSMicrophoneUsageDescription": "Para gravar \u00e1udio durante seus treinos.",
+        "NSPhotoLibraryUsageDescription": "Para enviar fotos do prato e v\u00eddeos de treino."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#111418"
+      },
+      "package": "com.emergent.kynaro.lvm01u",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-image.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#111418"
+        }
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-secure-store",
+      "expo-web-browser",
+      "expo-status-bar",
+      "expo-camera"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

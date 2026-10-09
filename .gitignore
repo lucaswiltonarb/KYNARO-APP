@@ -81,3 +81,9 @@ memory/test_credentials.md
 # Mobile development
 android-sdk/engine/venv/lib/python3.11/site-packages/jaxlib/libjax_common.so
 engine/venv/lib/python3.11/site-packages/jaxlib/libjax_common.so
+.env
+.env.*
+*.env
+credentials.json
+*.key
+.credentials

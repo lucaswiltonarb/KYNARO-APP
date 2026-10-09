@@ -17,9 +17,10 @@ export default defineConfig({
           code = code.replace("window.location.href='/login'", "window.location.href='/api/app/login'");
           return code;
         }
-        // Patch mediapipe paths in poseEngine
+        // Patch mediapipe paths in poseEngine (single quotes AND backticks)
         if (id.endsWith('poseEngine.js')) {
           code = code.replaceAll("'/mediapipe/", "'/api/app/mediapipe/");
+          code = code.replaceAll('`/mediapipe/', '`/api/app/mediapipe/');
           return code;
         }
         // Patch upload URLs in source files (dynamic ones from API will be handled by backend middleware)
